@@ -23,23 +23,23 @@ const Sunny_Wine = () => {
     const initialTime = 360;
   return (
     <>
-      <section className='relative flex items-center justify-center h-[32rem] text-white bg-neutral-900'>
+      <section className='relative flex items-center justify-center h-[40rem] md:h-[32rem] text-white bg-neutral-900'>
         <div 
           className="absolute md:text-[15rem] text-6xl font-bold text-neutral-700 opacity-25"
           style={{ WebkitTextStroke: '0.5px', zIndex: 0 }}
         >
           RIESLING
         </div>
-        <div className="absolute flex justify-center items-center">
-        <div className='flex flex-col justify-center items-center w-[18rem] gap-4'>
+        <div className="absolute flex flex-col  md:flex-row justify-center items-center gap-5">
+        <div className='flex flex-col justify-center items-center w-[18rem] gap-1 md:gap-4'>
             <div className='text-yellow-700 text-2xl'>What's New?</div>
-            <div className='text-center font-tinos text-6xl'>A Sunny Wine Icon</div>
+            <div className='text-center font-tinos text-4xl md:text-6xl'>A Sunny Wine Icon</div>
             <div className="w-12 " style={{ height: '2px', backgroundColor: '#FFF' }}/>
         </div>
         <img 
           src="src/assets/Wine_bottle_2.png" 
           alt="Wine Bottle"
-          
+          className='w-64 md:w-auto md:my-2'
           style={{ zIndex: 1 }}
         />
         <div>
@@ -68,7 +68,7 @@ const Sunny_Wine = () => {
                         </div>
                     </div>
                 <div className='text-yellow-700 text-2xl hover:cursor-pointer '>
-                    Shop now 
+                    Shop now  →
                 </div>
            </div>
         </div>
