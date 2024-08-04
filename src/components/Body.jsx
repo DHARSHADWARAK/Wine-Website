@@ -2,25 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // WineCard Component
+// WineCard Component
 const WineCard = ({ title, description, wines, imageSrc, imageAlt, reverse, className = '' }) => (
-    <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} bg-gray-800 rounded-lg overflow-hidden shadow-lg ${className} WineCard`} style={{ flex: 1, height: '60%' }}>
+    <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} bg-black rounded-lg overflow-hidden shadow-lg ${className} WineCard`} style={{ flex: 1 }}>
         {imageSrc ? (
-            <div className="w-full h-full">
+            <div className="w-full h-48 lg:h-full">
                 <img src={imageSrc} alt={imageAlt} className="w-full h-full object-cover" />
             </div>
         ) : (
             <div className={`w-full p-6 lg:p-8 flex flex-col justify-center ${!title && !description && !wines ? 'text-center' : ''}`}>
                 <div className="flex-grow">
-                    <h2 className="text-xl lg:text-2xl font-bold mb-4 text-white">
+                    <h2 className="text-xl lg:text-2xl font-bold mb-4 text-white"> {/* Keeping title text white for contrast */}
                         {title}
                     </h2>
-                    <p className="mb-4 text-gray-300 text-sm lg:text-base">
+                    <p className="mb-4 text-gray-300 text-sm lg:text-base"> {/* Keeping description text gray for contrast */}
                         {description}
                     </p>
                     {wines && (
                         <ul className="mb-6">
                             {wines.map((wine, index) => (
-                                <li key={index} className="mb-2 flex items-center text-gray-300 text-sm lg:text-base">
+                                <li key={index} className="mb-2 flex items-center text-gray-300 text-sm lg:text-base"> {/* Keeping wine list text gray for contrast */}
                                     <svg className="w-4 h-4 mr-2 text-gray-500" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                                         <path d="M5 13l4 4L19 7"></path>
                                     </svg>
@@ -59,7 +60,7 @@ const PhilosophyItem = ({ icon, title, description }) => (
 const WineSection = ({ className = '' }) => {
     return (
         <div className={`bg-[#0C0D0F] ${className}`}>
-            <section className="relative flex flex-col items-center justify-center py-16 lg:py-24 text-white bg-[#0C0D0F]">
+            <section className="relative flex flex-col items-center justify-center py-16 lg:py-24 text-white">
                 <div className="container mx-auto px-4">
                     <h1 className="text-3xl lg:text-4xl font-bold text-center font-form-serif relative mb-12">
                         Winemaking Philosophy
@@ -91,34 +92,32 @@ const WineSection = ({ className = '' }) => {
             </section>
 
             <div className="container mx-auto px-4 py-12">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 px-4">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                     <div className="lg:col-span-5 flex justify-center items-center">
                         <WineCard
                             imageSrc="/src/assets/cardbottle1.jpg"
                             imageAlt="White wine"
-                            className="h-full"
+                            className="h-full text-black"
                         />
                     </div>
 
                     <div className="lg:col-span-7 flex justify-center items-center">
                         <WineCard
                             title="Excellent Red Wines"
-                            description="After the harvest, the grapes are taken into a winery and prepared for primary ferment. At this stage red wine making diverges from white wine making."
+                            description="After the harvest, the grapes are taken into a winery and prepared for primary ferment."
                             wines={['Cabernet Sauvignon', 'Pinot Noir', 'Merlot']}
                             reverse={true}
-                            className="h-full"
-                            style={{ marginTop: 0, marginBottom: '15px' }}
+                            className="h-full text-black"
                         />
                     </div>
 
                     <div className="lg:col-span-7 flex justify-center items-center">
                         <WineCard
                             title="Classic Rosé Wines"
-                            description="Explore our selection of rosé wines that bring a fresh and crisp taste. Ideal for warm weather or as an aperitif."
+                            description="Explore our selection of rosé wines that bring a fresh and crisp taste."
                             wines={['Grenache', 'Syrah', 'Tempranillo']}
                             reverse={false}
-                            className="h-full"
-                            style={{ marginBottom: '15px' }}
+                            className="h-full text-black"
                         />
                     </div>
 
@@ -126,8 +125,7 @@ const WineSection = ({ className = '' }) => {
                         <WineCard
                             imageSrc="/src/assets/cardbottle1.jpg"
                             imageAlt="Sparkling wine"
-                            className="h-full"
-                            style={{ marginTop: '15px' }}
+                            className="h-full text-black"
                         />
                     </div>
                 </div>

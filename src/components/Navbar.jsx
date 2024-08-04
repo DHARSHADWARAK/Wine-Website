@@ -47,22 +47,25 @@ const NavBar = ({ className = '' }) => {
                 <div className="self-stretch flex flex-row items-start justify-start py-0 px-5 box-border max-w-full">
                     <div className="w-[794px] flex flex-col items-start justify-start gap-[40px] max-w-full z-[1] mq450:gap-[20px]">
                         <div className="flex flex-col items-start justify-start gap-[24px]">
-                            <h1 className="m-0 relative text-[28px] leading-[120%] font-semibold font-inherit mq450:text-[17px] mq450:leading-[40px] mq800:text-[23px] mq800:leading-[54px]">
-                                Unlock the world's hidden wonders!
+                            <h1 className="m-0 relative text-[32px] leading-[120%] font-semibold font-tinos mq450:text-[20px] mq450:leading-[40px] mq800:text-[28px] mq800:leading-[54px]">
+                                Wines that blow your mind!
                             </h1>
-                            <h3 className="m-0 relative text-2xl leading-[150%] font-medium font-inherit mq450:text-lg mq450:leading-[29px]">
+                            {/* Gold line below the heading */}
+                            <div className="w-full h-1 bg-gradient-to-r from-[#D4AF37] to-[#FFD700] rounded-full mb-4"></div>
+                            <p className="m-0 relative text-base leading-[140%] font-normal font-inherit mq450:text-sm mq450:leading-[22px]">
                                 Discover breathtaking destinations and create unforgettable memories.
-                            </h3>
+                            </p>
                         </div>
                         <div className="flex flex-row items-start justify-start">
-                            <button className="cursor-pointer py-1.5 px-[23px] bg-[transparent] [filter:drop-shadow(2px_4px_6px_rgba(5,_45,_53,_0.1))] border-[#D4AF37] border-[1px] border-solid flex flex-row items-center justify-center hover:bg-gainsboro-500 hover:box-border hover:border-[1px] hover:border-solid hover:border-[#D4AF37]">
-                                <div className="relative text-xl leading-[150%] font-inter text-gray-100 text-center inline-block min-w-[85px] mq450:text-lg mq450:leading-[29px]">
+                            <button className="cursor-pointer py-2 px-4 bg-[transparent] [filter:drop-shadow(2px_4px_6px_rgba(5,_45,_53,_0.1))] border-[#D4AF37] border-[1px] border-solid flex flex-row items-center justify-center hover:bg-gainsboro-500 hover:box-border hover:border-[1px] hover:border-solid hover:border-[#D4AF37] transition-all duration-300">
+                                <div className="relative text-lg leading-[150%] font-inter text-gray-100 text-center inline-block min-w-[75px] mq450:text-base mq450:leading-[29px]">
                                     Explore
                                 </div>
                             </button>
                         </div>
                     </div>
                 </div>
+
 
 
             </section>
