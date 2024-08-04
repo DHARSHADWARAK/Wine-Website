@@ -50,12 +50,12 @@ const Slider = () => {
 
   return (
     <section {...swipeHandlers}>
-      <div className='flex flex-row bg-black justify-center items-center'>
-        <img src="src/assets/Drinking_man.jpeg" alt="" className='w-[50%]' />
+      <div className='flex flex-col py-5 md:py-0 md:flex-row  bg-black items-start justify-center md:items-center gap-3 md:gap-0'>
+        <img src="src/assets/Drinking_man.jpeg" alt="" className='px-4 md:w-[50%]' />
         <div className='text-white w-[50%]'>
-          <div className="max-w-md mx-auto text-white">
+          <div className="w-full md:max-w-md mx-auto text-white">
             <div>
-              <div className="flex flex-col items-start gap-5">
+              <div className="w-96 flex flex-col items-start gap-5 px-4 md:px-0">
                 <div className='text-3xl font-tinos' >What Get People Saying</div>
                 <div className="flex flex-col justify-center items-center gap-3">
                   <img
@@ -64,7 +64,7 @@ const Slider = () => {
                     className="w-16 h-16 rounded-full"
                   />
                   <div className='flex flex-col justify-center items-center'>
-                    <h3 className="text-lg font-semibold text-yellow-500">{testimonials[currentIndex].name}</h3>
+                    <h3 className="text-lg font-semibold text-yellow-700">{testimonials[currentIndex].name}</h3>
                     <p className="text-gray-400">{testimonials[currentIndex].title}</p>
                   </div>
                 </div>
@@ -76,7 +76,7 @@ const Slider = () => {
                   <span
                     key={index}
                     className={`w-2 h-2 mx-1 rounded-full cursor-pointer ${
-                      currentIndex === index ? 'bg-yellow-500' : 'bg-gray-400'
+                      currentIndex === index ? 'bg-yellow-700' : 'bg-gray-400'
                     }`}
                     onClick={() => handleDotClick(index)}
                   ></span>
