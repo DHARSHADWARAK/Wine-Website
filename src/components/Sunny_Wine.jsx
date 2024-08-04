@@ -25,7 +25,7 @@ const Sunny_Wine = () => {
     <>
       <section className='relative flex items-center justify-center h-[40rem] md:h-[32rem] text-white bg-neutral-900'>
         <div 
-          className="absolute md:text-[15rem] text-6xl font-bold text-neutral-700 opacity-25"
+          className="absolute md:text-[15rem] text-7xl font-bold text-neutral-700 opacity-25"
           style={{ WebkitTextStroke: '0.5px', zIndex: 0 }}
         >
           RIESLING

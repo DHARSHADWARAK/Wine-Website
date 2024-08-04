@@ -14,7 +14,7 @@ const Discover = () => {
         }}
       >
             
-        <div className='flex flex-col justify-center md:mr-[40vw] items-center py-10 px-5 md:py-20  md:w-[35rem] gap-4'>
+        <div className='flex flex-col justify-center md:mr-[40vw] items-center py-10 px-4 md:py-20  md:w-[35rem] gap-4'>
             <h2 className="font-tinos text-3xl">Discover.Taste.Enjoy</h2>
             <div className="w-12 " style={{ height: '2px', backgroundColor: '#FFF' }}/>
             <p className='text-center text-lg'>
