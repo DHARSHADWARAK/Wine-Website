@@ -15,7 +15,7 @@ const ProductCard = ({ src, alt, name, price }) => {
 
 const Products = ({ children, className = '' }) => {
     return (
-        <section className="relative flex flex-col items-center justify-center py-16 lg:py-24 text-white bg-[#0C0D0F]">
+        <section className="relative flex flex-col items-center justify-center py-16 px-4 lg:py-24 text-white bg-[#0C0D0F]">
             <h2 className="text-3xl lg:text-4xl font-bold text-center font-form-serif relative mb-12">
                 Our Products
                 <span className="absolute bottom-[-1rem] left-1/2 transform -translate-x-1/2 block w-32 h-0.5 bg-[#d4af37]"></span>
